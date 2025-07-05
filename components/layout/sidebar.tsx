@@ -14,37 +14,37 @@ import Image from 'next/image'
 const data = [
   {
     title: 'Overview',
-    icon: <CiHome />
+    icon: <CiHome className='text-white' />
   },
   {
     title: 'DNA',
-    icon: <FaDna />
+    icon: <FaDna className='text-white'/>
   },
   {
     title: 'Care',
-    icon: <FaHeartPulse />
+    icon: <FaHeartPulse className='text-white'/>
   },
   {
     title: 'Orders',
-    icon: <FaBox />
+    icon: <FaBox className='text-white'/>
   },
   {
     title: 'Referrals',
-    icon: <CiLogout />
+    icon: <CiLogout className='text-white' />
   }
 ]
 const dataArray = [
   {
     title: 'Settings',
-    icon: <IoIosSettings />
+    icon: <IoIosSettings className='text-white'/>
   },
   {
     title: 'Support & Help',
-    icon: <MdOutlineContactSupport />
+    icon: <MdOutlineContactSupport className='text-white'/>
   },
   {
     title: 'Logout',
-    icon: <FaHeartPulse />
+    icon: <FaHeartPulse className='text-white'/>
   }
 ]
 
@@ -68,7 +68,7 @@ function Sidebar ({ isOpen, onClose }: SidebarProp) {
           className='object-cover w-20 h-10 rounded-md'
         />
         <span onClick={onClose}>
-          <FiSidebar className='text-1xl' />
+          <FiSidebar className='text-1xl text-white' />
         </span>
       </div>
 
@@ -83,7 +83,7 @@ function Sidebar ({ isOpen, onClose }: SidebarProp) {
               height={30}
               className='object-cover w-5 h-5 rounded-full'
             />
-            <p>Maxi</p>
+            <p className='text-white'>Maxi</p>
           </div>
           <div className='flex flex-col items-center'>
             <Image
@@ -93,13 +93,13 @@ function Sidebar ({ isOpen, onClose }: SidebarProp) {
               height={30}
               className='object-cover w-5 h-5 rounded-full'
             />
-            <p>Fiona</p>
+            <p className='text-white'>Fiona</p>
           </div>
           <div className='flex flex-col items-center'>
             <div className='bg-white flex items-center justify-center text-black rounded-[100%] m-auto h-4 w-4'>
-              <FaPlus className='' />
+              <FaPlus className='text-black' />
             </div>
-            <p className='mt-0'>Add new</p>
+            <p className='mt-0 text-white' >Add new</p>
           </div>
         </div>
       </div>
@@ -110,7 +110,7 @@ function Sidebar ({ isOpen, onClose }: SidebarProp) {
             return (
               <div className='flex items-center space-x-4 '>
                 {data.icon}
-                <span className=''>{data.title}</span>
+                <span className='text-white'>{data.title}</span>
               </div>
             )
           })}
@@ -123,7 +123,7 @@ function Sidebar ({ isOpen, onClose }: SidebarProp) {
               return (
                 <div className='flex items-center space-x-4 '>
                   {data.icon}
-                  <span className=''>{data.title}</span>
+                  <span className='text-white'>{data.title}</span>
                 </div>
               )
             })}
@@ -134,14 +134,14 @@ function Sidebar ({ isOpen, onClose }: SidebarProp) {
         <div className='text-white bg-gray-800 rounded-xl flex justify-center flex-col text-center space-x-2  p-5'>
           <div className='justify-center flex'>
             <div className=' mb-2 p-4 bg-black text-white rounded-2xl '>
-              <MdOutlinePets />
+              <MdOutlinePets className='text-white' />
             </div>
           </div>
           <div>
-            <h2 className=' font-bold'>Meet Buddy. Your Pet Care Icon Guide</h2>
-            <p className='text-[10px]'>
+            <h2 className='text-white font-bold'>Meet Buddy. Your Pet Care Icon Guide</h2>
+            <p className='text-white text-[10px]'>
               I have question about your pet's health, behaviour or daily
-              routine{' '}
+              routine
             </p>
           </div>
           <div className='mt-2'>

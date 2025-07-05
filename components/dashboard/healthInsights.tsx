@@ -36,13 +36,13 @@ const HealthInsights = () => {
         return (
           <div className='flex border-b-2 pb-3 mb-4 flex-col gap-1 '>
             <div>
-              <div className='flex gap-1 items-center'>
+              <div className='flex text-black gap-1 items-center'>
                 {data.icon}
                 <span className='text-xs text-gray-500 text-center mb-1'>
                   {data.title}
                 </span>
               </div>
-              <p>{data.text}</p>
+              <p className='text-black'>{data.text}</p>
             </div>
             <div>
               <button className='text-sm py-2 px-3 text-white bg-black rounded-lg'>
@@ -58,7 +58,7 @@ const HealthInsights = () => {
   return (
     <div className='bg-white max-h-[32rem] md:h-[32rem] xl:max-h-[30rem]  w-[100%] overflow-y-auto rounded-xl shadow  p-6 space-y-6'>
       <div>
-        <h2 className='text-lg font-medium'>Health Insights</h2>
+        <h2 className='text-lg text-black font-medium'>Health Insights</h2>
         <p className='text-sm text-gray-500'>
           Explore potential gentic helth risks and how to stay head of them.
         </p>
