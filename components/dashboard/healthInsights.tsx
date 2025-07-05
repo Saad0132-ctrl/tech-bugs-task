@@ -56,7 +56,7 @@ const HealthInsights = () => {
   )
 
   return (
-    <div className='bg-white max-h-[30rem] w-[100%] overflow-y-auto rounded-xl shadow  p-6 space-y-6'>
+    <div className='bg-white max-h-[32rem] md:h-[32rem] xl:max-h-[30rem]  w-[100%] overflow-y-auto rounded-xl shadow  p-6 space-y-6'>
       <div>
         <h2 className='text-lg font-medium'>Health Insights</h2>
         <p className='text-sm text-gray-500'>
