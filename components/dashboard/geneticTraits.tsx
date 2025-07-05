@@ -1,0 +1,85 @@
+import React from 'react'
+import { PiEyesLight } from 'react-icons/pi'
+import { FaPaw } from 'react-icons/fa'
+import { GiLargePaintBrush } from 'react-icons/gi'
+
+const GeneticTraits = () => {
+  let appearence = [
+    { data: 'Brown Eyes', icon: <PiEyesLight /> },
+    {
+      data: 'White Paws',
+      icon: <FaPaw />
+    },
+    {
+      data: 'Curl Coat',
+      icon: <GiLargePaintBrush />
+    },
+    {
+      data: 'Brown Eyes',
+      icon: <PiEyesLight />
+    }
+  ]
+  let behavior = [
+    { data: 'Brown Eyes', icon: <PiEyesLight /> },
+    {
+      data: 'White Paws',
+      icon: <FaPaw />
+    },
+    {
+      data: 'Curl Coat',
+      icon: <GiLargePaintBrush />
+    },
+    {
+      data: 'Brown Eyes',
+      icon: <PiEyesLight />
+    }
+  ]
+  let heathMarkeet = [
+    { data: 'Brown Eyes', icon: <PiEyesLight /> },
+    {
+      data: 'White Paws',
+      icon: <FaPaw />
+    },
+    {
+      data: 'Curl Coat',
+      icon: <GiLargePaintBrush />
+    },
+    {
+      data: 'Brown Eyes',
+      icon: <PiEyesLight />
+    }
+  ]
+
+  const Component = ({ title, data }: { title: string; data: any }) => (
+    <div className='space-y-2'>
+      <h3 className='text-gray-600 font-bold'>{title}</h3>
+      <div className='flex gap-2'>
+        {data.map((data: any) => {
+          return (
+            <div className='w-[47%] sm:w-[22%] flex p-3 flex-col items-center gap-1 bg-gray-100 rounded-md'>
+              {data.icon}
+              <span className='text-xs text-center'>{data.data}</span>
+            </div>
+          )
+        })}
+      </div>
+    </div>
+  )
+
+  return (
+    <div className='bg-white rounded-xl w-[100%] shadow p-6 mx-auto space-y-6'>
+      <div>
+        <h2 className='text-lg font-medium'>Your Pet’s Genetic Traits</h2>
+        <p className='text-sm text-gray-500'>
+          See what makes your pet truely unique form coat color to behaviour
+        </p>
+      </div>
+
+      <Component title='Appearance' data={appearence} />
+      <Component title='Behavior' data={behavior} />
+      <Component title='Health Markers' data={heathMarkeet} />
+    </div>
+  )
+}
+
+export default GeneticTraits
