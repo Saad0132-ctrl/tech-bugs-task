@@ -19,6 +19,7 @@ const GeneticTraits = () => {
       icon: <PiEyesLight className='text-black'/>
     }
   ]
+  
   let behavior = [
     { data: 'Brown Eyes', icon: <PiEyesLight className='text-black'/> },
     {
