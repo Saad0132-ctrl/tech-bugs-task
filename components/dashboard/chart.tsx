@@ -115,11 +115,11 @@ export function MyChart () {
     <div className='bg-white  p-4 flex flex-col lg:flex-row bg-whitesm:p-6 rounded-xl w-full  mx-auto gap-4  shadow-sm border border-gray-100 sm:gap-6'>
       <div className='w-full lg:w-[65%]'>
         <div className='flex items-center justify-between w-full mb-3'>
-          <h2 className='text-[#072635] text-base sm:text-lg font-semibold'>
+          <h2 className='text-[#3b0764] text-base sm:text-lg font-semibold'>
             Diagnosis History
           </h2>
-          <button className='flex items-center gap-1 sm:gap-2 px-2 py-1 rounded-md hover:bg-gray-50 transition-colors'>
-            <span className='text-[14px] text-[#072635] font-light'>
+          <button className='flex items-center gap-1 sm:gap-2 px-2 py-1 rounded-md hover:bg-[#fce7f3] transition-colors'>
+            <span className='text-[14px] text-[#3b0764] font-light'>
               Last 6 months
             </span>
             <Image
@@ -140,15 +140,15 @@ export function MyChart () {
                 {
                   label: 'Systolic',
                   data: systolicData,
-                  backgroundColor: '#5FC3D6',
-                  borderColor: '#5FC3D6',
+                  backgroundColor: '#6D28D9',
+                  borderColor: '#6D28D9',
                   borderWidth: 1
                 },
                 {
                   label: 'Diastolic',
                   data: diastolicData,
-                  backgroundColor: '#EC5252',
-                  borderColor: '#EC5252',
+                  backgroundColor: '#DB2777',
+                  borderColor: '#DB2777',
                   borderWidth: 1
                 }
               ]
@@ -181,9 +181,9 @@ export function MyChart () {
       </div>
 
       <div className=' lg:w-[35%] justify-center flex flex-col  space-y-4 sm:space-y-6 w-full'>
-        <div className='bg-gray-100  p-3 sm:p-4 rounded-lg'>
-          <div className='flex items-center mb-2'>
-            <span className=' bg-[#5FC3D6] w-3 h-3 border-2 rounded-full  border-white shadow-sm'></span>
+        <div className='bg-[#ede9fe] shadow-sm p-3 sm:p-4 rounded-lg'>
+          <div className='flex  items-center mb-2'>
+            <span className=' bg-[#6D28D9] w-3 h-3 border-2 rounded-full  border-white shadow-sm'></span>
             <span className='text-[#072635] ml-2 text-[14px] font-medium'>
               Systolic
             </span>
@@ -199,12 +199,12 @@ export function MyChart () {
               src='/download (1).svg'
               alt='Trend up'
             />
-            <span className='text-[#072635] text-[14px] ml-2 font-light'>
+            <span className='text-[#3b0764] text-[14px] ml-2 font-light'>
               Higher than Average
             </span>
           </div>
         </div>
-        <div className='bg-gray-100 rounded-lg p-3 sm:p-4'>
+        <div className='bg-[#FCE7F3] shadow-sm rounded-lg p-3 sm:p-4'>
           <div className='flex  items-center mb-2'>
             <span className='h-3 w-3 rounded-full shadow-sm bg-[#EC5252] border-2 border-white '></span>
             <span className='text-[#072635] ml-2 text-[12px] sm:text-sm font-normal'>
@@ -222,7 +222,7 @@ export function MyChart () {
               src='/download.svg'
               alt=''
             />
-            <span className='sm:text-sm text-[#072635] ml-2 font-light text-xs'>
+            <span className='sm:text-sm text-[#831843] ml-2 font-light text-xs'>
               Lower than Average
             </span>
           </div>

@@ -10,26 +10,20 @@ interface AppbarProp {
 
 function Navbar ({ onToggle }: AppbarProp) {
   return (
-    <div className='w-[100%] bg-white p-6 flex justify-between shadow-md sm:justify-end items-center'>
+    <div className='w-[100%] bg-white bg-gradient-to-r from-purple-700 to-indigo-800 p-4 flex justify-between shadow-lg sm:justify-end items-center'>
       <button onClick={onToggle} className='sm:hidden'>
-        <FiMenu className='text-2xl text-black' />
+        <FiMenu className='text-2xl text-white hover:text-yellow-300' />
       </button>
       <nav className='flex items-center justify-center '>
-        <ul className='flex gap-5 items-center justify-end'>
+        <ul className='flex gap-5 items-center justify-center'>
           <li>
-            <button className='text-gray-700 hover:text-gray-900 '>
-              <PiDog className='text-2xl text-black' />
-            </button>
+            <PiDog className='text-2xl text-white hover:text-yellow-300' />
           </li>
           <li>
-            <button className='text-gray-700 hover:text-gray-900 '>
-              <FaBell className='text-2xl text-black' />
-            </button>
+            <FaBell className='text-2xl text-white hover:text-yellow-300' />
           </li>
           <li>
-            <button className='text-gray-700 hover:text-gray-900 '>
-              <CgProfile className='text-2xl text-black' />
-            </button>
+            <CgProfile className='text-2xl text-white hover:text-yellow-300' />
           </li>
         </ul>
       </nav>
