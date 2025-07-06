@@ -181,7 +181,7 @@ export function MyChart () {
       </div>
 
       <div className=' lg:w-[35%] justify-center flex flex-col  space-y-4 sm:space-y-6 w-full'>
-        <div className='bg-gray-50  p-3 sm:p-4 rounded-lg'>
+        <div className='bg-gray-100  p-3 sm:p-4 rounded-lg'>
           <div className='flex items-center mb-2'>
             <span className=' bg-[#5FC3D6] w-3 h-3 border-2 rounded-full  border-white shadow-sm'></span>
             <span className='text-[#072635] ml-2 text-[14px] font-medium'>
@@ -204,8 +204,8 @@ export function MyChart () {
             </span>
           </div>
         </div>
-        <div className='bg-gray-50 rounded-lg p-3 sm:p-4'>
-          <div className='flex items-center mb-2'>
+        <div className='bg-gray-100 rounded-lg p-3 sm:p-4'>
+          <div className='flex  items-center mb-2'>
             <span className='h-3 w-3 rounded-full shadow-sm bg-[#EC5252] border-2 border-white '></span>
             <span className='text-[#072635] ml-2 text-[12px] sm:text-sm font-normal'>
               Diastolic
