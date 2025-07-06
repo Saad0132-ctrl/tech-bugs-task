@@ -10,7 +10,7 @@ interface AppbarProp {
 
 function Navbar ({ onToggle }: AppbarProp) {
   return (
-    <div className='w-[100%] bg-white p-6 flex justify-between sm:justify-end items-center'>
+    <div className='w-[100%] bg-white p-6 flex justify-between shadow-md sm:justify-end items-center'>
       <button onClick={onToggle} className='sm:hidden'>
         <FiMenu className='text-2xl text-black' />
       </button>

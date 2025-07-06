@@ -10,7 +10,7 @@ function Layout ({ children }: { children: React.ReactNode }) {
   return (
     <div className='flex h-screen'>
       <Sidebar isOpen={sidebarOpen} onClose={closeSidebar} />
-      <div className='w-[100%] flex  flex-col'>
+      <div className='min-w-[30%] flex-1 flex flex-col'>
         <Navbar onToggle={toggleSidebar} />
         <main className=' overflow-y-auto flex-1 p-4 bg-gray-50'>
           {children}

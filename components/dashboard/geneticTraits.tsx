@@ -16,14 +16,14 @@ const GeneticTraits = () => {
     },
     {
       data: 'Brown Eyes',
-      icon: <PiEyesLight className='text-black'/>
+      icon: <PiEyesLight className='text-black' />
     }
   ]
   let behavior = [
-    { data: 'Brown Eyes', icon: <PiEyesLight className='text-black'/> },
+    { data: 'Brown Eyes', icon: <PiEyesLight className='text-black' /> },
     {
       data: 'White Paws',
-      icon: <FaPaw className='text-black'/>
+      icon: <FaPaw className='text-black' />
     },
     {
       data: 'Curl Coat',
@@ -35,14 +35,14 @@ const GeneticTraits = () => {
     }
   ]
   let heathMarkeet = [
-    { data: 'Brown Eyes', icon: <PiEyesLight className='text-black'/> },
+    { data: 'Brown Eyes', icon: <PiEyesLight className='text-black' /> },
     {
       data: 'White Paws',
-      icon: <FaPaw className='text-black'/>
+      icon: <FaPaw className='text-black' />
     },
     {
       data: 'Curl Coat',
-      icon: <GiLargePaintBrush className='text-black'/>
+      icon: <GiLargePaintBrush className='text-black' />
     },
     {
       data: 'Brown Eyes',
@@ -53,12 +53,14 @@ const GeneticTraits = () => {
   const Component = ({ title, data }: { title: string; data: any }) => (
     <div className='space-y-2'>
       <h3 className='text-gray-600 font-bold'>{title}</h3>
-      <div className='flex gap-2'>
+      <div className='flex sm:justify-between gap-2'>
         {data.map((data: any) => {
           return (
             <div className='w-[47%] sm:w-[22%] text-black flex p-3 flex-col items-center gap-1 bg-gray-100 rounded-md'>
               {data.icon}
-              <span className='text-xs text-black text-center'>{data.data}</span>
+              <span className='text-xs text-black text-center'>
+                {data.data}
+              </span>
             </div>
           )
         })}
@@ -69,7 +71,9 @@ const GeneticTraits = () => {
   return (
     <div className='bg-white rounded-xl w-[100%] shadow p-6 mx-auto space-y-6'>
       <div>
-        <h2 className='text-lg text-black font-medium'>Your Pet’s Genetic Traits</h2>
+        <h2 className='text-lg text-black font-medium'>
+          Your Pet’s Genetic Traits
+        </h2>
         <p className='text-sm text-gray-500'>
           See what makes your pet truely unique form coat color to behaviour
         </p>

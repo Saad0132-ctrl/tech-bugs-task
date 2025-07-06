@@ -18,15 +18,15 @@ const data = [
   },
   {
     title: 'DNA',
-    icon: <FaDna className='text-white'/>
+    icon: <FaDna className='text-white' />
   },
   {
     title: 'Care',
-    icon: <FaHeartPulse className='text-white'/>
+    icon: <FaHeartPulse className='text-white' />
   },
   {
     title: 'Orders',
-    icon: <FaBox className='text-white'/>
+    icon: <FaBox className='text-white' />
   },
   {
     title: 'Referrals',
@@ -36,15 +36,15 @@ const data = [
 const dataArray = [
   {
     title: 'Settings',
-    icon: <IoIosSettings className='text-white'/>
+    icon: <IoIosSettings className='text-white' />
   },
   {
     title: 'Support & Help',
-    icon: <MdOutlineContactSupport className='text-white'/>
+    icon: <MdOutlineContactSupport className='text-white' />
   },
   {
     title: 'Logout',
-    icon: <FaHeartPulse className='text-white'/>
+    icon: <FaHeartPulse className='text-white' />
   }
 ]
 
@@ -55,7 +55,7 @@ interface SidebarProp {
 function Sidebar ({ isOpen, onClose }: SidebarProp) {
   return (
     <div
-      className={`fixed top-0 left-0 h-full  bg-black text-white w-[20rem] p-4 z-50
+      className={`fixed top-0 left-0 h-full  bg-black text-white w-[16rem] p-4 z-50
           sm:relative sm:translate-x-0 sm:block
           ${isOpen ? 'translate-x-0' : '-translate-x-full'} overflow-y-auto`}
     >
@@ -99,7 +99,7 @@ function Sidebar ({ isOpen, onClose }: SidebarProp) {
             <div className='bg-white flex items-center justify-center text-black rounded-[100%] m-auto h-4 w-4'>
               <FaPlus className='text-black' />
             </div>
-            <p className='mt-0 text-white' >Add new</p>
+            <p className='mt-0 text-white'>Add new</p>
           </div>
         </div>
       </div>
@@ -138,7 +138,9 @@ function Sidebar ({ isOpen, onClose }: SidebarProp) {
             </div>
           </div>
           <div>
-            <h2 className='text-white font-bold'>Meet Buddy. Your Pet Care Icon Guide</h2>
+            <h2 className='text-white font-bold'>
+              Meet Buddy. Your Pet Care Icon Guide
+            </h2>
             <p className='text-white text-[10px]'>
               I have question about your pet's health, behaviour or daily
               routine
