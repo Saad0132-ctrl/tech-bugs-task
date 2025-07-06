@@ -112,7 +112,7 @@ export function MyChart () {
     sortedDiagnosis[5] ?? sortedDiagnosis[sortedDiagnosis.length - 1]
 
   return (
-    <div className='  p-4 flex flex-col lg:flex-row max-w-5xl bg-whitesm:p-6 rounded-xl w-full  mx-auto gap-4  shadow-sm border border-gray-100 sm:gap-6'>
+    <div className='bg-white  p-4 flex flex-col lg:flex-row max-w-5xl bg-whitesm:p-6 rounded-xl w-full  mx-auto gap-4  shadow-sm border border-gray-100 sm:gap-6'>
       <div className='w-full lg:w-[65%]'>
         <div className='flex items-center justify-between w-full mb-3'>
           <h2 className='text-[#072635] text-base sm:text-lg font-semibold'>
